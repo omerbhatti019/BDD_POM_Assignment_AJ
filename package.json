@@ -11,10 +11,9 @@
     "mobile:report": "npm run clean:allure && npm run test:mobile && npm run allure:generate && npm run allure:open",
     "web:report": "npm run clean:allure && npm run test:web && npm run allure:generate && npm run allure:open",
     "clean:allure": "rimraf output/allure-results output/allure-report"
-
   },
   "keywords": [],
-  "author": "",
+  "author": "Omer Bhatti",
   "license": "ISC",
   "description": "",
   "devDependencies": {
