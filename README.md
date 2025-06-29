@@ -62,13 +62,13 @@ npm run test:all
 ### Run Only Web Tests
 ```bash
 npm run test:web
-npm run web:report // run tests and generate report for web scenarios
+npm run web:report  #run tests and generate report for web scenarios
 ```
 
 ### Run Only Mobile Tests
 ```bash
 npm run test:mobile
-npm run mobile:report // run tests and generate report for mobile scenarios
+npm run mobile:report #run tests and generate report for mobile scenarios
 ```
 
 ---
@@ -81,7 +81,7 @@ npm run allure:open
 ```
 
 > Make sure `allure` is installed via `npm i -g allure-commandline` or run with `npx`.
-NOTE: Make sure `allure-legacy` is installed via `npm i --save-dev @codeceptjs/allure-legacy' g allure-commandline` // used for BDD reporting 
+NOTE: Make sure `allure-legacy` is installed via `npm i --save-dev @codeceptjs/allure-legacy'   #used for BDD reporting 
 
 
 ---
