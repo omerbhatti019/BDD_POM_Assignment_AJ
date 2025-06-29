@@ -42,15 +42,27 @@ BDD_POM_Assignment_AJ/
 
 ---
 
-## 📦 Installation
+## 📦 Installation & Setup
 
 ```bash
 git clone <repo-url>
 cd BDD_POM_Assignment_AJ
 npm install
 ```
-
 ---
+
+## 🧰 Output Folder Info
+The `output/` directory is essential to:
+
+- Save screenshots of failed tests
+- Store Allure test results (`allure-results`)
+- Generate HTML reports (`allure-report`)
+
+If the folder is not automatically created, do this:
+
+```bash
+mkdir -p output # this will create a folder locally
+```
 
 ## ✅ Running Tests
 
