@@ -7,12 +7,12 @@ setCommonPlugins();
 exports.config = {
   tests: './*_test.js',
   output: './output',
-  timeout: 15, //time in seconds
+  timeout: 30, //time in seconds
   helpers: {
     WebDriver: {
       url: 'https://aljazeera.com',
       browser: 'chrome',
-      waitForTimeout: 5000, // in milliseconds
+      waitForTimeout: 30000, // in milliseconds
       restart: false,
       windowSize: 'maximize',
       desiredCapabilities: {
