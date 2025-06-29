@@ -4,7 +4,6 @@
 
  const { I } = inject();
 
- const assert = require('assert');
  
  module.exports = {
   cookiebtnAccept : '#onetrust-accept-btn-handler',
@@ -18,7 +17,7 @@
   },
 
   async acceptCookies() {
-    const exists = await I.grabNumberOfVisibleElements(this.cookiebtnAccept);
+    const exists = await I.grabNumberOfVisibleElements(this.cookiebtnAccept,10);
     if (exists > 0) {
       await I.click(this.cookiebtnAccept);
     }
@@ -29,7 +28,7 @@
 
   async resizeWindow(device){
     if (device === 'desktop') {
-      await  await I.resizeWindow(1920, 1080); // Example dimensions for desktop view
+      await I.resizeWindow(1920, 1080); // Example dimensions for desktop view
     }  
     else if (device === 'mobile') {
       await I.resizeWindow(375, 667); // Example dimensions for mobile view

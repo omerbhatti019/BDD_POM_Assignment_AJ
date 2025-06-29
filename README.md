@@ -70,7 +70,10 @@ npm run web:report  #run tests and generate report for web scenarios
 npm run test:mobile
 npm run mobile:report #run tests and generate report for mobile scenarios
 ```
-
+### Run Tests in Headless Mode 
+```bash
+npm run test:headless #run tests and generate report for all scenarios headless mode 
+```
 ---
 
 ## 📊 Generate & Open Allure Report Manually
@@ -97,6 +100,7 @@ NOTE: Make sure `allure-legacy` is installed via `npm i --save-dev @codeceptjs/a
     "allure:open": "npx allure open output/allure-report",
     "mobile:report": "npm run clean:allure && npm run test:mobile && npm run allure:generate && npm run allure:open",
     "web:report": "npm run clean:allure && npm run test:web && npm run allure:generate && npm run allure:open",
+     "test:headless": "npm run clean:allure && HEADLESS=true npx codeceptjs run --features && npm run allure:generate && npm run allure:open", # Headless 
     "clean:allure": "rimraf output/allure-results output/allure-report"
 }
 ```

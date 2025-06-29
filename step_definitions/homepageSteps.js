@@ -1,15 +1,15 @@
 // File: step_definitions/homeSteps.js
 
 const { I } = inject();
-const COMMONPAGE = require('../pages/CommonMethods');
+const COMMONMETHODS = require('../pages/CommonMethods');
 const HOMEPAGE = require('../pages/HomePage');
 
 // Feature: Home Page Tests
 Given('I am on the home page', async () => {
   console.log('Navigating to the home page...');
   
-  await COMMONPAGE.gotoHomePage();
-  await COMMONPAGE.acceptCookies();
+  await COMMONMETHODS.gotoHomePage();
+  await COMMONMETHODS.acceptCookies();
 });
 
 // Scenario #1: On Desktop make sure the "MOST POPULAR" section is visible
@@ -46,7 +46,7 @@ Then('I should see that URL contains "#most-read-container"', async () => {
 
 // Scenario #4: Make sure on mobile view "MOST POPULAR" section should not be visible
 Then('I should not see the "MOST POPULAR" section in Mobile', async () => {
-  await COMMONPAGE.resizeWindow('mobile');
+  await COMMONMETHODS.resizeWindow('mobile');
   await HOMEPAGE.checkMostPopularMobile();
 });
 

@@ -7,14 +7,25 @@ setCommonPlugins();
 exports.config = {
   tests: './*_test.js',
   output: './output',
+  timeout: 15, //time in seconds
   helpers: {
     WebDriver: {
       url: 'https://aljazeera.com',
       browser: 'chrome',
+      waitForTimeout: 5000, // in milliseconds
       restart: false,
       windowSize: 'maximize',
+      desiredCapabilities: {
+        chromeOptions: {
+          args: [
+            '--disable-gpu',
+            '--window-size=1920,1080'
+            // Do NOT include '--headless'
+          ]
+        }
     }
-  },
+  }
+},
   include: {
     homePage: './pages/HomePage.js'
   },
