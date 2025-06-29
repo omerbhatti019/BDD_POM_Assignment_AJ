@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5739","Make sure on mobile view ""MOST POPULAR"" section should not be visible @mobile","","Sun Jun 29 13:01:58 PKT 2025","passed","Sun Jun 29 13:02:03 PKT 2025","","HomePage:","HomePage:","Make sure on mobile view ""MOST POPULAR"" section should not be visible @mobile"

@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1751184116453' stop='1751184124246'>
+    <name>HomePage:</name>
+    <title>HomePage:</title>
+    <test-cases>
+        <test-case start='1751184118234' status='passed' stop='1751184123973'>
+            <name>Make sure on mobile view "MOST POPULAR" section should not be visible @mobile</name>
+            <title>Make sure on mobile view "MOST POPULAR" section should not be visible @mobile</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@mobile'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1751184118243' status='passed' stop='1751184123152'>
+                    <name>Given I am on the home page ""</name>
+                    <title>Given I am on the home page ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1751184118243' status='passed' stop='1751184122972'>
+                            <name>I am on page "/"</name>
+                            <title>I am on page "/"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1751184122973' status='passed' stop='1751184123071'>
+                            <name>I grab number of visible elements "#onetrust-accept-btn-handler"</name>
+                            <title>I grab number of visible elements "#onetrust-accept-btn-handler"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1751184123071' status='passed' stop='1751184123148'>
+                            <name>I click "#onetrust-accept-btn-handler"</name>
+                            <title>I click "#onetrust-accept-btn-handler"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1751184123152' status='passed' stop='1751184123973'>
+                    <name>Then I should not see the "MOST POPULAR" section in Mobile ""</name>
+                    <title>Then I should not see the "MOST POPULAR" section in Mobile ""</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1751184123152' status='passed' stop='1751184123913'>
+                            <name>I resize window 375, 667</name>
+                            <title>I resize window 375, 667</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1751184123913' status='passed' stop='1751184123973'>
+                            <name>I dont see element "#trending-articles-heading"</name>
+                            <title>I dont see element "#trending-articles-heading"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

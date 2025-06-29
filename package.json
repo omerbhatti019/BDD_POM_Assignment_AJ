@@ -1,0 +1,26 @@
+{
+  "name": "bdd_pom_assignment_aj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "npx codeceptjs run --features",
+    "test:web": "npx codeceptjs run --features --grep @web",
+    "test:mobile": "npx codeceptjs run --features --grep @mobile",
+    "allure:generate": "npx allure generate output/allure-results --clean -o output/allure-report",
+    "allure:open": "npx allure open output/allure-report",
+    "mobile:report": "npm run clean:allure && npm run test:mobile && npm run allure:generate && npm run allure:open",
+    "web:report": "npm run clean:allure && npm run test:web && npm run allure:generate && npm run allure:open",
+    "clean:allure": "rimraf output/allure-results output/allure-report"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
+    "allure-commandline": "^2.34.1",
+    "codeceptjs": "^3.7.3",
+    "webdriverio": "^9.16.2"
+  }
+}
