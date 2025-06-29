@@ -142,8 +142,6 @@ Scenario: Validate Homepage Loads
 | Error                                  | Solution                                                |
 |----------------------------------------|---------------------------------------------------------|
 | `allure: command not found`            | Install globally with `npm i -g allure-commandline`     |
-| `Cannot find module '@cucumber/cucumber'` | Run `npm install @cucumber/cucumber`                   |
-| `window is not defined`                | Ensure browser context or use proper WebDriver methods  |
 | `locator.replace is not a function`    | Pass string locators (like `'.selector'`) properly      |
 
 ---
